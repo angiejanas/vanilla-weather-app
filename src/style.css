@@ -13,20 +13,36 @@ ul {
 	padding: 0;
 }
 li {
-	list-style: none;
 	color: rgb(135, 135, 135);
 	font-size: 16px;
 	font-weight: 100;
 	line-height: 19px;
+	list-style: none;
 }
 li:first-letter {
 	text-transform: capitalize;
 }
 
 .weather-app {
-	max-width: 600;
-	margin: 30px auto;
-	padding: 20px;
 	border: 1px solid #dadde1;
 	border-radius: 5px;
+	margin-top: 30px;
+	max-width: 600;
+	padding: 20px;
+}
+.weather-temperature .units {
+	font-size: 16px;
+	position: relative;
+	top: -34px;
+}
+.weather-temperature img {
+	height: 64px;
+	margin-right: 5px;
+	width: 64px;
+}
+#temperature {
+	color: rgb(33, 33, 33);
+	font-size: 64px;
+	font-weight: 400;
+	line-height: 1;
 }

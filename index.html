@@ -22,12 +22,16 @@
       </ul>
       <div class="row">
         <div class="col-6">
-          <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="sunny">  
-          <strong id="temperature"></strong>
-          <span class="units">
-            <a href="#" id="fahrenheit">˚F</a> |
-            <a href="#" id="celsius">˚C</a>
-          </span>    
+          <div class="weather-temperature">
+            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="sunny" class="float-left">  
+            <div class="float-left">
+              <strong id="temperature"></strong>
+              <span class="units">
+                <a href="#" id="fahrenheit">˚F</a> |
+                <a href="#" id="celsius">˚C</a>
+              </span>    
+            </div>
+          </div>
         </div>
         <div class="col-6">      
           <ul>
@@ -41,11 +45,11 @@
           
         </div>
       </div>
-      <small>
-        <a href="https://github.com/angiejanas/vanilla-weather-app" target="_blank">Open source code</a> by Angie Janas
-      </small>
     </div>
-    </div>
+        <small>
+          <a href="https://github.com/angiejanas/vanilla-weather-app" target="_blank">Open source code</a> by Angie Janas
+        </small>
+  </div>
     <script src="src/app.js"></script>
   </body>
 </html>

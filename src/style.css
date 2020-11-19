@@ -19,6 +19,9 @@ li {
 	font-weight: 100;
 	line-height: 19px;
 }
+li:first-letter {
+	text-transform: capitalize;
+}
 
 .weather-app {
 	max-width: 600;
@@ -26,7 +29,4 @@ li {
 	padding: 20px;
 	border: 1px solid #dadde1;
 	border-radius: 5px;
-}
-#description {
-	text-transform: capitalize;
 }

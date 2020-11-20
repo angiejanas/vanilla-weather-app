@@ -52,6 +52,20 @@ function handleSumbit(event){
   search(cityInputElement.value);
 }
 
+function retrieveCurrentWeather(position){
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let apiKey = "3c253a53329d036c42d9260342b290bb";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function getCurrentLocaiton(event){
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(retrieveCurrentWeather);
+
+}
+
 function displayCelsiusTemperature (event){
   event.preventDefault();
   celsiusLink.classList.add("active");
@@ -80,5 +94,8 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let currentLocationButton = document.querySelector("#current-location");
+currentLocationButton.addEventListener("click", getCurrentLocaiton);
 
 search("New York");

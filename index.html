@@ -14,9 +14,10 @@
     <div class="weather-app-wrapper">
       <div class="weather-app">
         <form id="search-form" class="mb-3">
-          <div class="row">
-            <div class="col-9"><input type="search" placeholder="Type a city..." class="form-control" id="city-input" autocomplete="off"></input></div>
-            <div class="col-3"><input type="submit" value="Submit" class="btn btn-primary w-100"></input></div>
+          <div class="row search-form">
+            <div class="col-7"><input type="search" placeholder="Type a city..." class="form-control" id="city-input" autocomplete="off"></input></div>
+            <div class="col-1"><input type="submit" value="go" class="btn btn-primary w-200"></input></div>
+            <div class="col-3"><input type="submit" class="btn btn-primary w-200" value="Current Location" id="current-location"> </input></div>
           </div>
         </form>
       <div class="overview">
@@ -53,7 +54,7 @@
           
         </div>
       </div>
-      <div class="row weather-forecast">
+      <div class="row weather-forecast" id="forecast">
         <div class="col-2">
           <h3>Fri</h3>
           <img src="#" alt="">

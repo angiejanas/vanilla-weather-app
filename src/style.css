@@ -34,6 +34,11 @@ li:first-letter {
 	max-width: 600;
 	padding: 20px;
 }
+.div .col-6,
+.col-1,
+.col-3 {
+	padding: 0px;
+}
 .weather-temperature .units {
 	font-size: 16px;
 	position: relative;
@@ -86,4 +91,7 @@ li:first-letter {
 	height: auto;
 	line-height: 15px;
 	white-space: nowrap;
+}
+#search-form {
+	width: 600px;
 }

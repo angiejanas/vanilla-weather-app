@@ -33,12 +33,18 @@ function displayTemperature(response){
   iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
+function displayForecast(response){
+  let forecastElement = document.querySelector("#forecast");
+}
 
 function search(city){
   let apiKey = "3c253a53329d036c42d9260342b290bb";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-  
   axios.get(apiUrl).then(displayTemperature);
+  
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayForecast);
+
 }
 function handleSumbit(event){
   event.preventDefault();

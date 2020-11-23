@@ -29,7 +29,7 @@ a {
 	cursor: default;
 }
 a:hover {
-	color: #ffffff;
+	color: #eb5d4f;
 }
 small {
 	font-size: 14px;
@@ -91,7 +91,7 @@ small a:hover {
 }
 .weather-temperature .active {
 	color: #fff;
-	cursor: default;
+	cursor: pointer;
 }
 .weather-temperature .active:hover {
 	text-decoration: none;
